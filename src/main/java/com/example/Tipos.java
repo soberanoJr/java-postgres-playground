@@ -36,5 +36,16 @@ public class Tipos {
             Arrays.toString(arrayOfArrays[0]) + 
             Arrays.toString(arrayOfArrays[1])
         );
+
+        double a[][] = new double[4][10];
+        for (int i = 0; i < a.length; i++) {
+            System.out.print("[ ");
+            for (int j = 0; j < a[i].length; j++) {
+                a[i][j] = i * a[i].length + j + 1;
+                System.out.printf("%5.2f ", a[i][j]);
+            }
+            System.out.println("]");
+        }
+
     }
 }
