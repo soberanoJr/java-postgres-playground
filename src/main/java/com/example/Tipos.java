@@ -1,5 +1,7 @@
 package com.example;
 
+import java.util.Arrays;
+
 public class Tipos {
     public static void main(String[] args) {
         byte byteNumber = 18;
@@ -11,6 +13,10 @@ public class Tipos {
         var anotherNumber = 3.14;
         var character = 'a';
         var bool = true;
+        byte vector[] = {0, 1, 2, 3};
+        char charVector[] = {'a', 'b', 'c'};
+        byte arrayOfArrays[][] = { {1, 1, 2}, {3, 5, 8} };
+        
         System.out.println("-> byte number: " + byteNumber);
         System.out.println("-> double number: " + doubleNumber);
         System.out.println("-> ascii char: " + asciiChar);
@@ -20,5 +26,15 @@ public class Tipos {
         System.out.println("-> var (another number): " + anotherNumber);
         System.out.println("-> var (character): " + character);
         System.out.println("-> var (bool): " + bool);
+        System.out.println("-> vetor: " + Arrays.toString(vector));
+        System.out.println("-> vetor (char): " + Arrays.toString(charVector));
+        System.out.println("-> vetor[0]: " + vector[0]);
+        System.out.println("-> vetor[1]: " + vector[1]);
+        System.out.println("-> vetor[2]: " + vector[2]);
+        System.out.println("-> vetor[3]: " + vector[3]);
+        System.out.println("-> array of arrays: " + 
+            Arrays.toString(arrayOfArrays[0]) + 
+            Arrays.toString(arrayOfArrays[1])
+        );
     }
 }
