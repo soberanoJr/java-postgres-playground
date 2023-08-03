@@ -2,7 +2,7 @@ package com.example;
 
 import java.util.Arrays;
 
-public class Tipos {
+public class AppTipos {
     public static void main(String[] args) {
         byte byteNumber = 18;
         double doubleNumber = byteNumber;
