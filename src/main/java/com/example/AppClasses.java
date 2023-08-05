@@ -6,8 +6,8 @@ public class AppClasses {
         Cliente bob = new Cliente("Bob", 'M', 1983, 11943.57);
         Cliente charlie = new Cliente("Charlie", 'M', 1981, 13887.26);
 
-        System.out.println(alice.getName() + " | " + alice.getSexo() + " | " + alice.getRenda() + " | " + alice.getAnoNascimento());
-        System.out.println(bob.getName() + " | " + bob.getSexo() + " | " + bob.getRenda() + " | " + bob.getAnoNascimento());
-        System.out.println(charlie.getName() + " | " + charlie.getSexo() + " | " + charlie.getRenda() + " | " + charlie.getAnoNascimento());
+        System.out.println(alice.getNome() + " | " + alice.getSexo() + " | " + alice.getRenda() + " | " + alice.getAnoNascimento());
+        System.out.println(bob.getNome() + " | " + bob.getSexo() + " | " + bob.getRenda() + " | " + bob.getAnoNascimento());
+        System.out.println(charlie.getNome() + " | " + charlie.getSexo() + " | " + charlie.getRenda() + " | " + charlie.getAnoNascimento());
         }   
 }

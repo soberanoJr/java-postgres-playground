@@ -6,6 +6,10 @@ public class Cliente {
     private int anoNascimento;
     private double renda;
 
+    public Cliente(){
+
+    }
+
     public Cliente(String nome, char sexo, int anoNascimento, double renda){
         this.nome = nome;
         this.sexo = sexo;
@@ -13,12 +17,12 @@ public class Cliente {
         this.renda = renda;
     }
 
-    public String getName() {
+    public String getNome() {
         return nome;
     }
 
-    public void setName(String name) {
-        this.nome = name.trim();
+    public void setNome(String nome) {
+        this.nome = nome.trim();
     }
 
     public char getSexo() {
