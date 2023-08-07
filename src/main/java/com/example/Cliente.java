@@ -49,6 +49,10 @@ public class Cliente {
         this.renda = renda;
     }
 
+    public String toString(){
+        return "Cliente: " + nome + " | Sexo: " + sexo;
+    }
+
     /* public void setRenda(double renda){
         if(renda >= 0)
            this.renda = renda;
