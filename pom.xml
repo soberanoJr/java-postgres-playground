@@ -33,9 +33,9 @@
     <dependencies>
 
         <dependency>
-            <groupId>org.postgresql</groupId>
-            <artifactId>postgresql</artifactId>
-            <version>42.6.0</version>
+            <groupId>org.postgresql</groupId> <!-- com.mysql -->
+            <artifactId>postgresql</artifactId> <!-- mysql-connector-j -->
+            <version>42.6.0</version> <!-- 8.0.33 -->
         </dependency>
 
         <!-- Dependencies -->
