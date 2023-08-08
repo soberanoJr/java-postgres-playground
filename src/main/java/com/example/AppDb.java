@@ -20,7 +20,7 @@ public class AppDb {
         try {
             var conn = DriverManager.getConnection("jdbc:postgresql://localhost/postgres", "gitpod", "");
             statement = conn.createStatement();
-            var result = statement.executeQuery("SELECT * FROM ESTADO");
+            var result = statement.executeQuery("SELECT * FROM estado");
 
             System.out.println("Conectado ao banco de dados.");
             
