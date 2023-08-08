@@ -25,8 +25,8 @@ public class AppDb {
             System.out.println("Conectado ao banco de dados.");
             
             while (result.next())
-                System.out.printf("Id: %d | Nome: %s | UF: %s\n", 
-                result.getInt("id"), result.getString("nome"), result.getString("uf"));
+                // System.out.printf("Id: %d | Nome: %s | UF: %s\n", result.getInt("id"), result.getString("nome"), result.getString("uf"));
+                System.out.printf("UF: %s | %s\n", result.getString("uf"), result.getString("nome"));
 
         } catch (SQLException e) {
             // e.printStackTrace();
