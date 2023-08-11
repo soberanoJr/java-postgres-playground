@@ -31,25 +31,25 @@ public class AppDb {
     }
 
     private void listarDados(Connection conn, String tabela) {
-            try {
-                var statement = conn.createStatement();
-                var result = statement.executeQuery("SELECT * FROM " + tabela);
-                var metadata = result.getMetaData();
-                int cols = metadata.getColumnCount();
+        try {
+            var statement = conn.createStatement();
+            var result = statement.executeQuery("SELECT * FROM " + tabela);
+            var metadata = result.getMetaData();
+            int cols = metadata.getColumnCount();
 
+            for (int i = 1; i <= cols; i++)
+                System.out.printf("%s | ", metadata.getColumnName(i));
+            System.out.println("\n");
+            
+            while (result.next()){
                 for (int i = 1; i <= cols; i++)
-                    System.out.printf("%s | ", metadata.getColumnName(i));
-                System.out.println("\n");
-                
-                while (result.next()){
-                    for (int i = 1; i <= cols; i++)
-                        System.out.printf("%s | ", result.getString(i));
-                    System.out.println();
-                }
-            } catch (SQLException e) {
-                System.err.println("Não foi possível conectar ao banco de dados. " + e.getMessage());
+                    System.out.printf("%s | ", result.getString(i));
+                System.out.println();
             }
-    }
+        } catch (SQLException e) {
+            System.err.println("Não foi possível conectar ao banco de dados. " + e.getMessage());
+        }
+}
 
     private void localizarUF(Connection conn, String uf) {
         try {
