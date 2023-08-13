@@ -4,6 +4,8 @@ package com.example;
 import java.util.LinkedList;
 import java.util.List;
 
+import com.example.model.Cliente;
+
 public class AppListas {
     public static void main(String[] args) {
         // Cliente[] vetorClientes = new Cliente[5];

@@ -51,22 +51,21 @@ public class AppDb {
         }
 }
 
-    private void localizarUF(Connection conn, String uf) {
-        try {
-            // var sql = "SELECT * FROM estado WHERE uf = '" + uf + "'"; Risco de SLQ Injection.
-            var sql = "SELECT * FROM estado WHERE uf = ?";
-            var statement = conn.prepareStatement(sql);
-            //System.out.println(sql);
-            statement.setString(1, uf);
-            var result = statement.executeQuery();
-            if(result.next())
-                System.out.printf("%s: %s\n", result.getString("uf"), result.getString("nome"));
-            System.out.println();
-        } catch (SQLException e) {
-            System.err.println("Erro ao executar consulta SQL.");
-        }
-        
+private void localizarUF(Connection conn, String uf) {
+    try {
+        // var sql = "SELECT * FROM estado WHERE uf = '" + uf + "'"; Risco de SLQ Injection.
+        var sql = "SELECT * FROM estado WHERE uf = ?";
+        var statement = conn.prepareStatement(sql);
+        //System.out.println(sql);
+        statement.setString(1, uf);
+        var result = statement.executeQuery();
+        if(result.next())
+            System.out.printf("%s: %s\n", result.getString("uf"), result.getString("nome"));
+        System.out.println();
+    } catch (SQLException e) {
+        System.err.println("Erro ao executar consulta SQL.");
     }
+}
 
     private void listarUFs(Connection conn) {
         try {

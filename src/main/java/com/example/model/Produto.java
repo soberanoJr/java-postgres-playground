@@ -1,6 +1,5 @@
-package com.example;
+package com.example.model;
 
-// c d e C D E
 public class Produto {
     private Long id;
     private String nome;

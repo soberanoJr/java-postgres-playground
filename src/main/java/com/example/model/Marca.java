@@ -1,5 +1,5 @@
-package com.example;
-// c d e C D E 
+package com.example.model;
+
 public class Marca {
     private Long id;
     private String nome;

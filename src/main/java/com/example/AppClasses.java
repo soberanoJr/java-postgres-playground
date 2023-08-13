@@ -1,5 +1,7 @@
 package com.example;
 
+import com.example.model.Cliente;
+
 public class AppClasses {
     public static void main(String[] args) {
         Cliente alice = new Cliente("Alice", 'F', 1979, 17155.50);
